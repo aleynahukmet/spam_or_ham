@@ -32,11 +32,12 @@ The process that we use to convert text to a form that Python and a machine lear
 Feature engineering is the process of creating new features and/or transforming existing features to get the most out of your data. What else could O extract from that text that would be helpful for the model to decide spam from ham? For instance, I thought to include the length of the text field. Maybe spam tends to be a little bit longer than real text messages. And then I included what percent of the characters in the text message is punctuation. I added these new features to the data and to see if they were relevant for our upcoming machine learning model I used some visualizations.The first photo shown above is for the newly created text length feature for the distribution of spam/ham messages and the second photo is for the percentage of punctuations:
 
 <p align="center"> 
-   <img alt="https://user-images.githubusercontent.com/87663976/149575258-e5676885-cd2a-4a4e-9309-44d55b5674e3.png">
+   <img alt="https://user-images.githubusercontent.com/87663976/149577938-bed6228d-9f2e-4274-8eac-0ea89baaa7e6.png">
 </p>
 
+
 <p align="center"> 
-   <img alt="https://user-images.githubusercontent.com/87663976/149575285-94f9fde9-57f3-47b6-8772-35981b230eba.png">
+   <img alt="https://user-images.githubusercontent.com/87663976/149577981-89afbc97-1c4d-434a-9247-525dd4bb2ab4.png">
 </p>
 
 I chose the text length feature as my new feature and left the punctuation percentage behind after a few observations.
@@ -53,4 +54,6 @@ After I got the results of cross-validation I trained my random forest model Ran
    |  1.0                 | 0.5797       | 0.7339       |
   
 Then I checked the best parameters combinations for my random forest model with grid-search.
+
+ 
 
